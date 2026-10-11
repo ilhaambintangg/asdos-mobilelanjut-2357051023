@@ -1,7 +1,6 @@
+
 import 'package:flutter/material.dart';
-// import 'column_widget.dart';
-// import 'row_widget.dart';
-import 'first_widget.dart';
+import 'home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,14 +12,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Praktikum Mobile Lanjut',
+      debugShowCheckedModeBanner: false,
+      title: 'Pertemuan 7',
       theme: ThemeData(
+        useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.deepPurple,
         ),
-        useMaterial3: true,
       ),
-      home: FirstWidget(),
+      home: const HomePage(),
     );
   }
 }
